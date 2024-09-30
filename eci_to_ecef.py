@@ -22,7 +22,7 @@ import math
 import numpy as np
 
 # "constants"
-w = 7.292115 * 10**-5 #rad
+w = 7.292115 * 10**-5 #rad/sec
 
 # helper functions
 
@@ -112,6 +112,7 @@ rECEF = Rz @ rECI
 ecef_x_km = rECEF[0][0]
 ecef_y_km = rECEF[1][0] 
 ecef_z_km = rECEF[2][0]
+
 
 print(ecef_x_km)
 print(ecef_y_km)
